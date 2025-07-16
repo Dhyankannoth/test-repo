@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="English">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <title>Digital Timer</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <div class = "container">
+        <h1> 📖STUDY TIMER </h1>
+        <div id = "timer-display">00:00:00</div>
+        <div class = "controls">
+            <input type="number" id="hours-input" placeholder="hours" min = "0">
+            <input type="number" id="minutes-input" placeholder="Minutes" min="0" max="59">
+            <input type="number" id="seconds-input" placeholder="Seconds" min="0" max="59">
+            <button id = "start-btn">▶</button>
+            <button id="stop-btn">⏸</button>
+            <button id="reset-btn">⏹</button>
+        </div>
+    </div>
+    <audio id="alarm-sound" src="alarm_audio_1.mp3" preload="auto"></audio>   
+    <script src="script.js"></script>
+    </body>
+</html>
